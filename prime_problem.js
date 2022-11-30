@@ -1,15 +1,15 @@
 let num=19;
 
 let count=0;
-for(let i = 2; i < num; i++){
+for(let i = 1; i <= num; i++){
 
-  if(num % 2 == 0){
+  if(num % i == 0){
    count++;
   }
 }
-if(count>0){
-   console.log("Not Prime");
+if(count==2){
+   console.log("Prime");
 }
 else{
-   console.log("Prime");
+   console.log("Not Prime");
 }
